@@ -1,0 +1,142 @@
+@import url('__source.css');
+@import url('nav.css');
+
+#communityPage {
+  padding: 6rem 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #1371db, #99c7d8);
+}
+.header2 {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+}
+
+.header2 .searchIcon {
+  flex: 2;
+  padding: 1rem;
+  position: relative;
+}
+
+.header2 .searchIcon input {
+  width: 100%;
+  padding: 1rem;
+  background-color: #c4c4c4;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: large;
+  outline: none;
+}
+
+.header2 .searchIcon .glass {
+  position: absolute;
+  font-size: 3rem;
+  right: 20px;
+  top: 20px;
+}
+
+.header2 .kanan {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header2 .kanan select,
+.header2 .kanan .btn-q {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: large;
+  padding: 1em 2em;
+  border: none;
+  font-weight: 600;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  padding: 4rem;
+  gap: 5rem;
+}
+
+.content .Question {
+  background-color: rgb(235, 103, 125);
+  padding: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.content .Question:hover {
+  opacity: 0.8;
+}
+
+.content .Question h3 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+}
+
+.content .Question p {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 1200px) {
+  .header2 .kanan select,
+  .header2 .kanan .btn-q {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    border: none;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header2 .kanan select,
+  .header2 .kanan .btn-q {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    border: none;
+    font-weight: 600;
+  }
+  .header2 .searchIcon input {
+    width: 100%;
+    padding: 1rem;
+    background-color: #c4c4c4;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    outline: none;
+  }
+  .header2 .searchIcon .glass {
+    position: absolute;
+    font-size: 2rem;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header2 {
+    flex-direction: column;
+  }
+  .header2 .kanan select,
+  .header2 .kanan button {
+    flex: 1;
+    margin: 0 10px;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 4rem;
+    gap: 5rem;
+  }
+}

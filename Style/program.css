@@ -1,0 +1,252 @@
+@import url('__source.css');
+
+body {
+  background-image: linear-gradient(to top, #1371db, #99c7d8);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.nav-bar {
+  height: 10vh;
+  padding: 1rem;
+  display: flex;
+}
+
+.nav-bar .kiri {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .kiri h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-bar .kiri h1 span {
+  color: var(--primary-color);
+}
+
+.nav-bar .kanan {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-bar .kanan a {
+  margin: 0 2rem;
+}
+
+.nav-bar .kanan a button {
+  border: 5px solid var(--primary-color);
+  background-color: transparent;
+  padding: 0.5em 3em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-bar .kanan a button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.nav-bar .kanan a img {
+  width: 50px;
+}
+
+.nav-bar .kanan a img:hover {
+  opacity: 0.8;
+}
+
+.program {
+  width: 100%;
+  height: 90vh;
+  padding: 1.5rem;
+}
+
+.program .konten-atas {
+  display: flex;
+  padding: 1rem;
+}
+
+.program .konten-atas .kiri {
+  flex: 2;
+  display: flex;
+  padding: 1rem;
+}
+
+.program .konten-atas .kiri .livestream {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.program .konten-atas .kanan {
+  flex: 1;
+  padding: 1rem;
+}
+
+.program .konten-atas .kanan .source-file-absen {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.program .konten-atas .kanan .source-file-absen .source-file {
+  flex: 1;
+  display: flex;
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.program .konten-atas .kanan .source-file-absen .source-file h3 {
+  margin-right: 0.5em;
+}
+
+.program .konten-atas .kanan .source-file-absen .absen {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: greenyellow;
+}
+
+.program .konten-atas .kanan .chat {
+  width: 100%;
+  background-color: white;
+  list-style: none;
+  padding: 1rem;
+}
+
+.program .konten-atas .kanan .chat li {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 0.5rem 0;
+}
+
+.program .konten-atas .kanan .chat li p:first-child {
+  font-weight: bold;
+}
+
+.program .konten-atas .kanan .input-chat {
+  background-color: white;
+  padding: 1em;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.program .konten-atas .kanan .input-chat input {
+  flex: 1;
+  background-color: #c4c4c4;
+  border: none;
+  color: white;
+  padding: 0.5em;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.program .konten-bawah {
+  display: flex;
+}
+
+.program .konten-bawah .trainer {
+  flex: 0.5;
+  display: flex;
+}
+
+.program .konten-bawah .trainer .trainer-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program .konten-bawah .trainer .trainer-img img {
+  width: 50%;
+}
+
+.program .konten-bawah .trainer .trainer-text {
+  flex: 1;
+}
+
+.program .konten-bawah .trainer .trainer-text h5 {
+  font-size: 1.4rem;
+  color: white;
+}
+.program .konten-bawah .trainer .trainer-text h5:first-child {
+  color: var(--primary-color);
+}
+
+.program .konten-bawah .trainer .trainer-text p {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.program .konten-bawah .session {
+  flex: 1;
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+.program .konten-bawah .session h4 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.program .konten-bawah .session p {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .program {
+    height: 100%;
+  }
+
+  .program .konten-atas {
+    flex-direction: column;
+  }
+
+  .program .konten-bawah {
+    flex-direction: column;
+  }
+  .program .konten-bawah .trainer {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav-bar .kanan a {
+    display: none;
+  }
+  .nav-bar .kanan a:first-child {
+    display: block;
+  }
+
+  .program .konten-atas .kanan .input-chat input {
+    width: 100%;
+  }
+}

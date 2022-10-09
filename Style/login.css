@@ -1,0 +1,173 @@
+@import url('__source.css');
+
+section.login {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.content-kiri {
+  flex: 1;
+  padding: 1rem;
+}
+
+.content-kiri .content-kiri-judul {
+  display: flex;
+  justify-content: end;
+  padding: 0.5rem;
+}
+
+.content-kiri .content-kiri-judul a button {
+  border: none;
+  padding: 0.5em 2em;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.2s;
+}
+
+.content-kiri .content-kiri-judul a button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.content-kiri .content-kiri-isi {
+  padding: 1rem;
+}
+
+.content-kiri .content-kiri-isi h1 {
+  font-size: 3rem;
+}
+
+.content-kiri .content-kiri-isi form {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-kiri .content-kiri-isi form label {
+  padding: 0.5em;
+  padding-left: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.content-kiri .content-kiri-isi form input {
+  padding: 0.8rem;
+  font-size: larger;
+}
+
+.content-kiri .content-kiri-isi form input:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.content-kiri .content-kiri-isi form button {
+  margin: 2rem 0;
+  padding: 0.8rem;
+  font-size: larger;
+  font-weight: 600;
+  border-radius: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  box-shadow: 0 0 10px #99c7d8;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.content-kiri .content-kiri-isi form button:hover {
+  opacity: 0.8;
+}
+
+.content-kiri .content-kiri-isi .gfa {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-kiri .content-kiri-isi .gfa a {
+  padding: 0.3em 2em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.content-kiri .content-kiri-isi .gfa a:hover {
+  opacity: 0.6;
+}
+
+.content-kanan {
+  flex: 1;
+  padding: 1rem;
+  background-image: linear-gradient(to top, #1371db, #99c7d8);
+}
+
+.content-kanan .content-kanan-judul {
+  display: flex;
+  padding: 1rem;
+  height: 10vh;
+  width: 100%;
+  justify-content: end;
+}
+
+.content-kanan .content-kanan-judul h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.content-kanan .content-kanan-judul h1 span {
+  color: var(--primary-color);
+}
+
+.content-kanan .content-kanan-isi {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-kanan .content-kanan-isi img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.content-kanan .content-kanan-isi h6 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  section.login {
+    overflow: visible;
+    flex-direction: column;
+  }
+  .content-kiri .content-kiri-isi h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content-kiri .content-kiri-isi .gfa {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .content-kiri .content-kiri-isi .gfa a {
+    margin: 0.5em 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

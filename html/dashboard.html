@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../Style/dashboard.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <section id="headers">
+      <div class="header container">
+        <div class="navbar">
+          <div class="brand">
+            <a href="Home.html">
+              <h1>Let's <span>Learn</span></h1></a
+            >
+          </div>
+          <div class="nav-list">
+            <div class="hamburger"><div class="bar"></div></div>
+            <ul>
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="course.html">Course</a></li>
+              <li><a href="Program.html">Program</a></li>
+              <li><a href="Community.html">Community</a></li>
+              <li>
+                <a href="#"><img src="https://img.icons8.com/flat-round/64/000000/bell.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/gear.png" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <div class="content">
+      <div class="content-kiri">
+        <!-- Profile -->
+        <section id="profiles">
+          <div class="profile container">
+            <div class="profileImg">
+              <img src="../img/dashboard/orang.png" alt="" />
+            </div>
+            <div class="profileContent">
+              <h2>Geraldus Galvin Santoso</h2>
+              <h2><span class="profileId">LL12345678</span></h2>
+              <h2><span class="profileTitle">Average Learner</span></h2>
+              <a href="dashboard.html" type="button" class="cta">My Profile</a>
+            </div>
+          </div>
+        </section>
+        <!-- End Profile -->
+      </div>
+
+      <div class="content-kanan">
+        <!-- Course -->
+        <section id="courses">
+          <div class="course container">
+            <div class="course-top">
+              <h2 class="section-title">My Course</h2>
+            </div>
+            <div class="course-content">
+              <div class="course-item">
+                <div class="course-img"><img src="../img/dashboard/1.png" alt="" /></div>
+                <div class="course-info">
+                  <h3>Basic HTML 5</h3>
+                  <div class="course-join">
+                    <h3>
+                      <a href="courseDetail.html"><span class="joinLink">Join Class</span></a>
+                    </h3>
+                    <h3 class="percentage"><span class="GoodclassPerc">82%</span></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="course-item">
+                <div class="course-img"><img src="../img/dashboard/2.png" alt="" /></div>
+                <div class="course-info">
+                  <h3>Basic Stock Analysis</h3>
+                  <div class="course-join">
+                    <h3>
+                      <a href="courseDetail.html"><span class="joinLink">Join Class</span></a>
+                    </h3>
+                    <h3 class="percentage"><span class="AvgclassPerc">50%</span></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="course-item">
+                <div class="course-img"><img src="../img/dashboard/3.png" alt="" /></div>
+                <div class="course-info">
+                  <h3>Apps Development</h3>
+                  <div class="course-join">
+                    <h3>
+                      <a href="courseDetail.html"><span class="joinLink">Join Class</span></a>
+                    </h3>
+                    <h3 class="percentage"><span class="BadclassPerc">25%</span></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- End Course -->
+        <section id="lists">
+          <!-- To Do List -->
+          <div class="list container">
+            <div class="list-top">
+              <h2 class="section-title">To Do List</h2>
+            </div>
+            <div class="list-content">
+              <ul>
+                <h2><li>3rd Session Object Oriented Programming Course</li></h2>
+                <h2><li>1st Session C++/C# Programming Course</li></h2>
+                <h2><li>Community Project Meeting - Mobile Apps Development</li></h2>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- End List -->
+      </div>
+    </div>
+
+    <script src="../JS/dashboard.js"></script>
+  </body>
+</html>

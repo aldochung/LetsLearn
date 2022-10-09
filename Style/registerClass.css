@@ -1,0 +1,117 @@
+@import url('__source.css');
+
+section.regis {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.regis-nav {
+  display: flex;
+  height: 10vh;
+  background-color: #287ddb;
+  align-items: center;
+  padding: 1rem;
+}
+
+.regis-nav a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+.regis-nav a:hover {
+  transform: scale(0.9);
+}
+
+.regis-nav h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.regis-nav h1 span {
+  color: var(--primary-color);
+}
+.regis-isi {
+  width: 100%;
+  padding: 2rem;
+  height: calc(100vh - 10vh);
+}
+
+.regis-isi .kotak-regis {
+  width: 60%;
+  margin: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.regis-isi .kotak-regis .regis-judul {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.regis-isi .kotak-regis form {
+  display: flex;
+  flex-direction: column;
+}
+
+.regis-isi .kotak-regis form label {
+  padding: 0.5em;
+  padding-left: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.regis-isi .kotak-regis form input {
+  padding: 0.5rem;
+  font-size: larger;
+}
+
+.regis-isi .kotak-regis form input:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.regis-isi .kotak-regis select {
+  padding: 0.5rem;
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+.regis-isi .kotak-regis .btn {
+  padding: 0.8em;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  box-shadow: 0 0 10px #99c7d8;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.regis-isi .kotak-regis .btn:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  section.regis {
+    overflow: visible;
+  }
+
+  .regis-isi {
+    padding: 1rem;
+  }
+
+  .regis-isi .kotak-regis {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .regis-isi .kotak-regis {
+    width: 100%;
+  }
+}
